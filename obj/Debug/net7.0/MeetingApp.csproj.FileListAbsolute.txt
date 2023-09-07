@@ -26,3 +26,5 @@
 /Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/obj/Debug/net7.0/ref/MeetingApp.dll
 /Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/obj/Debug/net7.0/MeetingApp.RazorAssemblyInfo.cache
 /Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/obj/Debug/net7.0/MeetingApp.RazorAssemblyInfo.cs
+/Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/bin/Debug/net7.0/libman.json
+/Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/bin/Debug/net7.0/MeetingApp.staticwebassets.runtime.json

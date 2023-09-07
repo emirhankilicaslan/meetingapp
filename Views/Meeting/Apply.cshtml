@@ -1,4 +1,28 @@
-<h1 class="h4">Toplanti Katilim Formu</h1>
-<form action="">
+@model UserInfo
+@{
+    ViewBag.Title = "Basvuru formu";
+}
+
+<h1 class="h4 text-center">Toplanti Katilim Formu</h1>
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Ad Soyad</label>
+        <input asp-for="Name" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Phone" class="form-label">Telefon</label>
+        <input asp-for="Phone" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label asp-for="WillAttend" class="form-label">Katilim Durumu</label>
+        <select asp-for="WillAttend" class="form-select">
+            <option value="true">Evet, geliyorum</option>
+            <option value="false">Hayir, gelmiyorum</option>
+        </select>
+    </div>
     <button class="btn btn-primary" type="submit">Kaydet</button>
 </form>

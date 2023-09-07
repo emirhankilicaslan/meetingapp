@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using meetingapp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -15,7 +16,14 @@ namespace meetingapp.Controllers
             return View();
         }
 
+        [HttpGet]//by default
         public IActionResult Apply()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Apply(UserInfo userInfo)
         {
             return View();
         }
