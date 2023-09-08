@@ -1,3 +1,4 @@
+@model List<UserInfo>
 @{
     ViewBag.Title = "Toplanti Katilim Listesi";
 }
@@ -12,13 +13,30 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Emirhan Kilicaslan</td>
-                <td>Evet</td>
-                <td>
-                    <a class="btn btn-sm btn-primary" href="">Detay</a>
-                </td>
-            </tr>
+            @{
+                int participant = 0;
+            }
+            @foreach(var user in Model)
+            {
+                var status = @user.WillAttend == true ? "Evet" : "Hayir";
+                var className = @user.WillAttend == true ? "table-success" : "table-danger";
+
+                if(@user.WillAttend == true){
+                    participant++;
+                }
+                <tr class="@className">
+                    <td>@user.Name</td>
+                    <td>@status</td>
+                    <td>
+                        <a class="btn btn-sm btn-primary" href="/meeting/details/@user.Id">Detay</a>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
+    <div class="card">
+        <div class="card-body">
+            <span>Katilimci sayisi: @participant</span>
+        </div>
+    </div>
 </main>

@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
       "Id": "/Users/emirhankilicaslan/Desktop/aspnetcore-dersleri/meetingapp/wwwroot/lib/bootstrap/css/bootstrap-grid.css",
       "PackagePath": "staticwebassets/lib/bootstrap/css/bootstrap-grid.css"
     },
